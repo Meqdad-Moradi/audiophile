@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./app/cart.js" defer></script>
+    <script src="./app/main.js" defer></script>
+    <!-- <script src="./app/headphone.js" defer></script> -->
+    <title>Audiophile | Cart</title>
+</head>
+
+<body>
+
+    <!-- start header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <a href="./index.html" class="logo">
+                        <h1>audiophile</h1>
+                    </a>
+                </div>
+                <nav class="header-nav">
+                    <ul class="nav-list">
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./headphones.html">headphones</a></li>
+                        <li><a href="./speakers.html">speakers</a></li>
+                        <li><a href="./earphones.html">earphones</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-container">
+                    <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start go back section -->
+    <section id="go-back">
+        <div class="container">
+            <a href="./index.html"><i class="fas fa-chevron-left"></i> go back</a>
+        </div>
+    </section>
+    <!-- end go back section -->
+
+
+    <!-- start cart main section -->
+    <section id="cart">
+        <div class="container">
+            <div class="cart-body">
+                <main id="checkout">
+                    <h1 class="title">checkout</h1>
+                    <div class="billing-details form-container">
+                        <h2 class="sub-title">billing details</h2>
+                        <div class="billing-form-container">
+                            <form id="billing-form">
+                                <div class="input-cover">
+                                    <label for="name">name</label>
+                                    <input type="text" id="name" placeholder="Alexa Ward">
+                                </div>
+                                <div class="input-cover">
+                                    <label for="email">email address</label>
+                                    <input type="email" id="email" placeholder="Alexa.Ward@gmail.com">
+                                </div>
+                                <div class="input-cover">
+                                    <label for="phone-number">phone number</label>
+                                    <input type="number" id="phone-number" placeholder="+43 660 342 483">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="shipping-info form-container">
+                        <h2 class="sub-title">shipping info</h2>
+                        <div class="shipping-form-container">
+                            <form id="shipping-form">
+                                <div class="input-cover">
+                                    <label for="address">address</label>
+                                    <input type="text" id="address" placeholder="1135 Martinluter Str.">
+                                </div>
+                                <div class="input-cover">
+                                    <label for="zip">ZIP Code</label>
+                                    <input type="number" id="zip" placeholder="6020">
+                                </div>
+                                <div class="input-cover">
+                                    <label for="city">city</label>
+                                    <input type="text" id="city" placeholder="Innsbruck">
+                                </div>
+                                <div class="input-cover">
+                                    <label for="country">country</label>
+                                    <input type="text" id="country" placeholder="Austria">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="payment-details form-container">
+                        <h2 class="sub-title">payment details</h2>
+                        <div class="payment-form-container">
+                            <form id="payment-form">
+                                <div class="payment-method">
+                                    <h3>payment method</h3>
+                                </div>
+                                <div class="input-cover radio active">
+                                    <!-- <div class="radio-btn"></div>
+                                    <p class="e-mony label">e-Money</p> -->
+                                    <input type="radio" name="radio" id="radio1" checked>
+                                    <label class="e-mony label" for="radio1">e-Money</label>
+                                </div>
+                                <div class="input-cover radio">
+                                    <!-- <div class="radio-btn"></div>
+                                    <p class="cash label">Chash on Delivery</p> -->
+                                    <input type="radio" name="radio" id="radio2">
+                                    <label class="cash label" for="radio2">Chash on Delivery</label>
+                                </div>
+                                <div class="input-cover">
+                                    <label for="e-money-number" class="e-number">e-money number</label>
+                                    <input type="number" id="e-money-number" placeholder="39328749">
+                                </div>
+                                <div class="input-cover">
+                                    <label for="e-money-pin" class="e-number">e-Money PIN</label>
+                                    <input type="number" id="e-money-pin" placeholder="8979">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+                <div class="summary">
+                    <h2 class="sub-title">summary</h2>
+                    <div class="summary-products">
+                        <div class="summary-product">
+                            <div class="product">
+                                <div class="img-cover">
+                                    <img src="./images/adam-audio-a7x.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2>adam audio a7x</h2>
+                                    <p class="product-price">$ 2,999</p>
+                                </div>
+                            </div>
+                            <div class="qty">x1</div>
+                        </div>
+                        <div class="summary-product">
+                            <div class="product">
+                                <div class="img-cover">
+                                    <img src="./images/Headphone-848x1030.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h2>xx99 mark ||</h2>
+                                    <p class="product-price">$ 2,999</p>
+                                </div>
+                            </div>
+                            <div class="qty">x2</div>
+                        </div>
+                        <div class="detail-price">
+                            <div class="total">
+                                <p class="text">total</p>
+                                <p class="price">$ 5.483</p>
+                            </div>
+                            <div class="total">
+                                <p class="text">shipping</p>
+                                <p class="price">$ 50</p>
+                            </div>
+                            <div class="total">
+                                <p class="text">vat(included)</p>
+                                <p class="price">$ 1.488</p>
+                            </div>
+                            <div class="total">
+                                <p class="text">grand total</p>
+                                <p class="price grand-price">$ 7.483</p>
+                            </div>
+                            <button class="checkout-btn btn">continue & pay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end cart main section -->
+
+
+    <!-- start footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="content">
+                <div class="logo"><a href="./index.html">audiophile</a></div>
+                <p>audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and
+                    sound specialists who are devoted to helping you get the most out of personal audio. Come and visit
+                    our demo facility - we'er open 7 days a week.
+                </p>
+                <p class="copyright">copyright &copy; 2021, all rights reserved</p>
+            </div>
+            <nav class="footer-nav">
+                <ul class="nav-list">
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./headphones.html">headphones</a></li>
+                    <li><a href="./speakers.html">speakers</a></li>
+                    <li><a href="./earphones.html">earphones</a></li>
+                </ul>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- developer -->
+    <div id="developer">
+        <div class="container">
+            <p class="developer">coded by: Meqdad Moradi - <span>Chalange by: <a
+                        href="https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx"
+                        target="_blank">Frontend Mentor</a></span>
+            </p>
+        </div>
+    </div>
+    <!-- end footer -->
+
+</body>
+
+</html>
